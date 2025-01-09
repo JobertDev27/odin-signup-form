@@ -1,0 +1,67 @@
+html, button {
+    font-family: 'Courier New', Courier, monospace;
+    color: azure;
+    
+}
+
+body {
+    background-image: url("bg.png");
+    background-position-x: -150px;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    margin-bottom: 0px;
+    font-size: 36px;
+    text-wrap-mode: wrap;
+    max-width: 400px;
+}
+
+h1 > span {
+    color: red;
+    font-weight: 900;
+}
+
+#form {
+    margin: 0px;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    background-color: rgba(0, 0, 0, 0.753);
+    transform: translateY(-50%);
+    padding: 20px 50px;
+}
+
+input {
+    color: azure;
+    background-color: rgb(48, 48, 48);
+    outline: none;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input:valid {
+    border: 2px solid green;
+}
+
+button {
+    background-color: rgb(46, 46, 46);
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+
+.form-container {
+    display: flex;
+    gap: 50px;
+}
+
+.column > div {
+    margin-top: 15px;
+}
+
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FOR THE LEGION!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section id="form">
+    <h1>CEASAR'S LEGION IS IN NEED OF YOUR <span>AID!</span></h1>
+    <span>Join now by filling up this form</span>
+    <form action="">
+        <div class="form-container">
+            <div class="column">
+                <div>
+                    <div><label for="firstName">First Name</label></div>
+                    <div><input type="text" name="firstName" required></div>
+                </div>
+                <div>
+                    <div><label for="lastName">Last Name</label></div>
+                    <div><input type="text" name="LastName" required></div>
+                </div>
+                <div>
+                    <div><label for="birthday">Birthday</label></div>
+                    <div><input type="date" name="birthday" required></div>
+                </div>
+            </div>
+            
+            <div class="column">
+                <div>
+                    <div><label for="email">Email Adress</label></div>
+                    <div><input type="email" name="email" required></div>
+                </div>
+                <div>
+                    <div><label for="password">Password</label></div>
+                    <div><input type="password" name="password" class="p1" required></div>
+                </div>
+                <div>
+                    <div><label for="passwordValidation">Retype Password</label></div>
+                    <div><input type="password" name="passwordValidation" class="p2" required></div>
+                </div>
+            </div>
+        </div>
+        <button type="submit">SUBMIT</button>
+    </form>
+</section>
+</body>
+
+<script>
+    const form = document.querySelector("#form");
+    const p1 = document.querySelector(".p1");
+    const p2 = document.querySelector(".p2");
+
+    form.addEventListener("submit", (e) => {
+        if (p1.value !== p2.value) {
+            e.preventDefault();
+            alert("PASSWORD MUST MATCH");
+    }});
+</script>
+
+</html>
